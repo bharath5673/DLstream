@@ -182,9 +182,37 @@ You get:
 
 ### 🟧 YOLO POSE (OpenVINO)
 
-<p align="center"><img width="70%" src="pose_demo.gif"></p>
+<p align="center"><img width="70%" src="https://github.com/bharath5673/DLstream/blob/main/demo/human_pose_estimation.gif"></p>
 
 🔗 `DLStreamer-Python/Pose/`
+
+---
+### 🟧 YOLO PERSON TRACKING (OpenVINO)
+
+<p align="center"><img width="70%" src="https://github.com/bharath5673/DLstream/blob/main/demo/pedestrian_tracker.gif"></p>
+
+🔗 `DLStreamer-Python/tracking/`
+
+---
+### 🟧  SEGMENTATION
+
+<p align="center"><img width="70%" src="https://github.com/bharath5673/DLstream/blob/main/demo/segmentation.gif"></p>
+
+🔗 `DLStreamer-Python/Pose/`
+
+---
+### 🟧  Face ANALYSIS
+
+<p align="center"><img width="70%" src="https://github.com/bharath5673/DLstream/blob/main/demo/interactive_face_detection.gif"></p>
+
+🔗 `DLStreamer-Python/face/`
+
+---
+### 🟧  CLASSIFICATION
+
+<p align="center"><img width="70%" src="https://github.com/bharath5673/DLstream/blob/main/demo/classification.gif"></p>
+
+🔗 `DLStreamer-Python/classification/`
 
 ---
 
@@ -201,21 +229,73 @@ bash QuickDemo.sh
 # 📂 **Repo Structure**
 
 ```
-DLStreamer-OpenVINO/
-│
-├── DLStreamer-Configs/
-│   ├── MultiModel/
-│   ├── Streams/ (multi-stream, tiling, custom pipelines)
-│
-├── DLStreamer-Python/
-│   ├── yolo
-│   ├── yolo + pose
-│   ├── ROI counting
-│   ├── trajectory tracking
-│
-├── CNN-to-DLStreamer/
-│
-└── QuickTest.sh
+DLstreamer/
+├── demo
+│   ├── pedestrian_tracker.gif
+│   ├── segmentation.gif
+├── demo.gif
+├── DLStream-Configs
+│   ├── dlstreamer_omz
+│   │   ├── models
+│   │   │   ├── intel
+│   │   │   │   ├── age-gender-recognition-retail-0013
+│   │   │   │   │   ├── FP16
+│   │   │   │   │   │   ├── age-gender-recognition-retail-0013.bin
+│   │   │   │   │   │   └── age-gender-recognition-retail-0013.xml
+│   │   │   │   │   ├── FP16-INT8
+│   │   │   │   │   │   ├── age-gender-recognition-retail-0013.bin
+│   │   │   │   │   │   └── age-gender-recognition-retail-0013.xml
+│   │   │   │   │   └── FP32
+│   │   │   │   │       ├── age-gender-recognition-retail-0013.bin
+│   │   │   │   │       └── age-gender-recognition-retail-0013.xml
+│   │   │   │   ├── emotions-recognition-retail-0003
+│   │   │   │   │   ├── FP16
+│   │   │   │   │   │   ├── emotions-recognition-retail-0003.bin
+│   │   │   │   │   │   └── emotions-recognition-retail-0003.xml
+│   │   │   │   │   ├── FP16-INT8
+│   │   │   │   │   │   ├── emotions-recognition-retail-0003.bin
+│   │   │   │   │   │   └── emotions-recognition-retail-0003.xml
+│   │   │   │   │   └── FP32
+│   │   │   │   │       ├── emotions-recognition-retail-0003.bin
+│   │   │   │   │       └── emotions-recognition-retail-0003.xml
+
+│   │   │   ├── yolo11n_openvino_model
+│   │   │   │   ├── n
+│   │   │   │   │   ├── metadata.yaml
+│   │   │   │   │   ├── yolo11n.bin
+│   │   │   │   │   ├── yolo11n.json
+│   │   │   │   │   └── yolo11n.xml
+│   │   │   │   ├── yolo11s.bin
+│   │   │   │   └── yolo11s.xml
+│   │   │   ├── yolo11n.pt
+│   │   │   ├── yolo11s
+│   │   │   │   ├── FP16
+│   │   │   │   │   ├── yolo11s.bin
+│   │   │   │   │   └── yolo11s.xml
+│   │   │   │   └── FP32
+│   │   │   │       ├── yolo11s.bin
+│   │   │   │       └── yolo11s.xml
+
+│   │   ├── openvino_ga_cid
+│   │   └── stats
+│   └── download_YOLO_models.py
+├── DLStream-Python
+│   ├── dlstreamer_test_yolo.py
+│   ├── dlstreamer_test_yolo_save_vid.py
+│   ├── draw_face_attributes.py
+│   └── hello_dlstreamer.py
+├── inputs
+│   ├── 1192116-sd_640_360_30fps.mp4
+│   ├── head-pose-face-detection-female-and-male.mp4
+│   └── youtube_stream_20250321_151616.mp4
+├── Intel_logo.jpg
+├── OpenVino.png
+├── outputs
+│   └── dlstream_output_20251209_072421.mp4
+├── QuickDemo.sh                                                   ### main sh file
+├── README.md
+└── test_dl.py                                                     ### orchestartor running all python demos
+
 ```
 
 ---
@@ -223,9 +303,9 @@ DLStreamer-OpenVINO/
 # 🙏 **Acknowledgements**
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Intel_logo_%282020%2C_dark_blue%29.svg" height="55"/>
+  <img src="https://github.com/bharath5673/DLstream/blob/main/Intel_logo.jpg" height="55"/>
   &nbsp;&nbsp;&nbsp;
-  <img src="https://datatonic.com/insights/machine-learning-inference-intel-openvino" height="55"/> <!-- OpenVINO -->
+  <img src="https://github.com/bharath5673/DLstream/blob/main/OpenVino.png" height="55"/> <!-- OpenVINO -->
   &nbsp;&nbsp;&nbsp;
   <img src="https://opencv.org/wp-content/uploads/2020/07/OpenCV_logo_black.png" height="55"/>
   &nbsp;&nbsp;&nbsp;
