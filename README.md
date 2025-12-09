@@ -31,8 +31,8 @@
 | Component              | Recommended / Supported                                                         |
 | ---------------------- | ------------------------------------------------------------------------------- |
 | **OS**                 | **Ubuntu 24.04 LTS**                                                            |
-| **OpenVINO Version**   | **2024.4+**                                                                     |
-| **DLStreamer Version** | **1.8+**                                                                        |
+| **OpenVINO Version**   | **2025.4+**                                                                     |
+| **DLStreamer Version** | **2025.0.1.3**                                                                        |
 | **Acceleration**       | **Intel CPU • iGPU • Intel ARC • Myriad-X VPU • Neural Compute Stick 2 (NCS2)** |
 |                        | **Luxonis OAK Series (vPU offload)**                                            |
 |                        | **GNA / HAILO / OpenVINO EP Devices**                                           |
@@ -102,15 +102,15 @@ Intel official quick install:
 
 DLStreamer:
 
-🔗 [https://dlstreamer.github.io/get_started](https://dlstreamer.github.io/get_started)
+🔗 [[https://dlstreamer.github.io/get_started](https://github.com/open-edge-platform/edge-ai-libraries/tree/main/libraries/dl-streamer)])
 
 ---
 
 ## Clone this Repo and Run Quick Demo
 
 ```bash
-git clone https://github.com/bharath5673/DLStreamer-OpenVINO.git
-cd DLStreamer-OpenVINO
+git clone https://github.com/bharath5673/DLstream.git
+cd DLstream
 bash QuickDemo.sh
 ```
 
