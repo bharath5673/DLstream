@@ -121,6 +121,7 @@ Runs instantly with DLStreamer-ready pipelines:
 * Multi-model, multi-stream pipelines
 * Region-based analytics
 * Full OpenVINO acceleration
+* **[YOLO Models Converter](https://github.com/bharath5673/DLstream/tree/main/DLStream-Configs)**
 
 ---
 
