@@ -102,7 +102,7 @@ Intel official quick install:
 
 DLStreamer:
 
-🔗 [[https://dlstreamer.github.io/get_started](https://github.com/open-edge-platform/edge-ai-libraries/tree/main/libraries/dl-streamer)])
+🔗 [https://dlstreamer.github.io/get_started](https://github.com/open-edge-platform/edge-ai-libraries/tree/main/libraries/dl-streamer))
 
 ---
 
