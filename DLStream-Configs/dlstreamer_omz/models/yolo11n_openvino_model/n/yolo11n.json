@@ -1,0 +1,22 @@
+{
+  "description": "YOLO11n model proc for DLStreamer",
+  "input_preproc": [
+    {
+      "layer_name": "",
+      "color_format": "BGR",
+      "mean": [0.0, 0.0, 0.0],
+      "scale": [0.0039216, 0.0039216, 0.0039216],
+      "precision": "FP32"
+    }
+  ],
+  "output_postproc": [
+    {
+      "layer_name": "",
+      "converter": "tensor_to_bbox_yolo_v8",
+      "num_classes": 80,
+      "labels": "coco_80cl.txt",
+      "anchors": [],
+      "confidence_threshold": 0.25
+    }
+  ]
+}
