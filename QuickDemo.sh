@@ -8,7 +8,7 @@ export DISPLAY=:1
 xhost +
 
 CONTAINER_NAME="dlstreamer-temp"
-IMAGE_NAME="intel/dlstreamer:latest"
+IMAGE_NAME="bharath5673/dlstreamer:latest"
 
 PROJECT_ROOT="./"
 
