@@ -221,7 +221,7 @@ You get:
 ### ⚡ Quick Demo
 
 ```bash
-cd DLStreamer-OpenVINO
+cd DLstream
 bash QuickDemo.sh
 ```
 
