@@ -65,27 +65,10 @@
 
 * ARC A380 / A750 / A770
 * ARC Pro Series
-* Fully supported via **OpenVINO GPU plugin**
 
 ### **Intel® Data Center GPUs**
 
-### **Intel Movidius VPUs**
 
-* **Myriad X VPU**
-* **Intel Neural Compute Stick 2 (NCS2)**
-* **DepthAI / Luxonis OAK devices (Myriad-X on board)**
-
-  * OAK-D
-  * OAK-Lite
-  * OAK-Pro
-  * OAK-FF
-  * OAK-1/2 POE
-  * OAK-SoM
-
-### **Partner Accelerators (via OpenVINO EP)**
-
-* **HAILO-8/10** (OpenVINO EP)
-* **GNA v1/v2** (keyword spotting, speech models)
 
 ---
 
