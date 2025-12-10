@@ -33,9 +33,7 @@
 | **OS**                 | **Ubuntu 24.04 LTS**                                                            |
 | **OpenVINO Version**   | **2025.4+**                                                                     |
 | **DLStreamer Version** | **2025.0.1.3**                                                                        |
-| **Acceleration**       | **Intel CPU • iGPU • Intel ARC • Myriad-X VPU • Neural Compute Stick 2 (NCS2)** |
-|                        | **Luxonis OAK Series (vPU offload)**                                            |
-|                        | **GNA / HAILO / OpenVINO EP Devices**                                           |
+| **Acceleration**       | Intel CPU • iGPU • Intel ARC                                                    |
 | **Docker Support**     | Yes – OpenVINO Runtime Containers                                               |
 | **Bare Metal Support** | Full                                                                            |
 
