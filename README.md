@@ -67,7 +67,7 @@
 * ARC Pro Series
 * Fully supported via **OpenVINO GPU plugin**
 
-### ** Intel® Data Center GPUs**
+### **Intel® Data Center GPUs**
 
 ### **Intel Movidius VPUs**
 
